@@ -92,6 +92,23 @@ while (tarea1.estado !== Estados.Completa) {
 }
 
 // 3. Funciones
+/** 
+ * Función que muestra un saludo por consola a una persona
+ * @param nombre Nombre de la persona a saludar, por defecto sera Pepe
+*/ 
+
+function saludar(nombre:string = "Pepe"):void {
+    console.log("Hola " + nombre);
+}
+
+const salidaFuncion = saludar("geer")
+console.log(salidaFuncion)
+
+function saludar2(nombre?:string):void {
+    console.log("Hola " + nombre);
+}
+
+saludar2()
 
 // 4. Eventos y persistencia de datos en el navegador
 // 5. Clases y objetos
